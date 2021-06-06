@@ -7,7 +7,7 @@
      public function add_item_to_menu() {
         add_menu_page(
             'Testimonials Slider',
-            'Testimonials',
+            'Cigno Testimonials',
             'manage_options',
             'ak-testimonials',
             array($this, 'render'),
