@@ -1,0 +1,51 @@
+@import "@glidejs/glide/src/assets/sass/glide.core";
+@import "@glidejs/glide/src/assets/sass/glide.theme";
+
+#ak-testimonial-slider {
+  min-height: 300px;
+}
+
+.glide__slide {
+  min-height: 250px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  .slide-body {
+    text-align: center;
+    .slide-testimonial {
+      font-size: 1.1em;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .testimonial-date {
+      opacity: 0.8;
+      font-size: 0.7em;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .slide-logo-container {
+      height: 40px;
+      width: 150px;
+      margin: 0 auto;
+      display: block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      span {
+        visibility: hidden;
+      }
+
+      &#productreview {
+        background-image: url("./images/productreview.png");
+      }
+
+      &#trustpilot {
+        background-image: url("./images/trustpilot.png");
+      }
+    }
+  }
+}

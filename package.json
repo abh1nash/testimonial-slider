@@ -1,0 +1,33 @@
+{
+  "name": "testimonials-slider",
+  "version": "1.0.0",
+  "description": "WP Testimonial Slider",
+  "scripts": {
+    "build:frontend": "parcel build src/frontend/index.js src/frontend/styles.scss --dist-dir dist/frontend --no-scope-hoist --no-source-maps",
+    "build:backend": "parcel build src/backend/index.js --dist-dir dist/backend --no-scope-hoist --no-source-maps",
+    "dev": "parcel watch src/frontend/index.js src/frontend/styles.scss src/backend/index.js --dist-dir dist --no-source-maps",
+    "build": "npm run build:frontend && npm run build:backend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abh1nash/testimonial-slider.git"
+  },
+  "author": "Abhinash Khatiwada",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abh1nash/testimonial-slider/issues"
+  },
+  "homepage": "https://github.com/abh1nash/testimonial-slider#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.3.1",
+    "@parcel/transformer-vue": "^2.0.0-beta.3.1",
+    "parcel": "^2.0.0-beta.3.1"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1",
+    "primeflex": "^2.0.0",
+    "primeicons": "^4.1.0",
+    "primevue": "^3.5.0",
+    "vue": "^3.0.11"
+  }
+}
